@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <title>aplus tz</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+	
+	<body>
+		<div class="col">
+			<h3>Справочник книг</h3>
+			<div class = "info" id = "bookList"></div>
+			<input type="text" class="inp" id = "bookName" size="40" placeholder="Название книги"/><br/>
+			<input type="number" class="inp" id = "bookYear" size="4" placeholder="Год издания"/><br/>
+			<input type="submit" class="clap" id = "addBookBtn" value="Добавить книгу"/>
+			<button class="clap" id = "delBookBtn">Удалить книгу</button>
+		</div>
+		
+		<div class="col">
+			<h3>Посетители</h3>
+			<div class = "info" id = "visitList"></div>
+			<input type="text" class="inp" size="40" placeholder="ФИО" id="visitorFIO"/><br/>
+			<p>Пол:</p>
+			<input type="radio" name="gender" value="Женский"/>Женский<br/>
+			<input type="radio" name="gender" value="Мужской"/>Мужской<br/>
+			<input type="submit" class="clap" id = "addVisitorBtn" value="Добавить посетителя"/>
+			<button class="clap" id = "delVisitorBtn">Удалить посетителя</button>
+		</div>
+		
+		<div class="col">
+			<h3>Брони</h3>
+			<div class = "info" id = "Booking"></div>
+			<button class="clap" id = "addBookingBtn">Добавить бронь</button>
+			<button class="clap" id = "delBookingBtn">Удалить бронь</button>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
